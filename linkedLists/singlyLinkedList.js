@@ -23,12 +23,12 @@ class SinglyLinkedList {
 		if (!this.head) {
 			this.head = newbie;
 			this.tail = newbie;
-			this.length++;
 		} else {
 			this.tail.next = newbie;
 			this.tail = newbie;
 			newbie.next = null;
-			this.length++;
 		}
+		this.length++;
+		return this;
 	}
 }
