@@ -17,6 +17,7 @@ class SinglyLinkedList {
 		this.tail = null;
 		this.length = 0;
 	}
+	/* This is an instance method */
 	push(val) {
 		let newbie = new Node(val);
 
