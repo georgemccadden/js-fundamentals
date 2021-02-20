@@ -24,13 +24,11 @@ class BinarySearchTree {
 					}
 					curr = curr.left;
 				} else {
-					if (value > curr.value) {
-						if (!curr.right) {
-							curr.right = newNode;
-							return this;
-						}
-						curr = curr.right;
+					if (!curr.right) {
+						curr.right = newNode;
+						return this;
 					}
+					curr = curr.right;
 				}
 			}
 		}
