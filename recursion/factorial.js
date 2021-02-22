@@ -16,3 +16,13 @@ const recursiveFactorial = (num) => {
 	if (num === 0 || num === 1) return 1;
 	return num * recursiveFactorial(num - 1);
 };
+
+/*
+
+BIG O : 
+
+Runtime complexity -> O(n) for both
+
+Space complextiy -> O(1) for both
+
+*/
