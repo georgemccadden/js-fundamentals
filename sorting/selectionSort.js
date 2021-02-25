@@ -36,3 +36,12 @@ const selectionSort = (array) => {
 	}
 	return array;
 };
+
+/*
+
+BIG O :
+
+Runtime Complexity -> O(n^2) quadratic time
+Space Complexity -> O(1) constant time
+
+*/
