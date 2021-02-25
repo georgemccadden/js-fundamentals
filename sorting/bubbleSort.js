@@ -14,4 +14,12 @@ return -> [0, 1, 2, 4, 5, 6, 44, 63, 87, 99, 283]
 
 ALGORITHM :
 
+- keep track of the least and greatest variables
+- If one index is greater than the other, swap and continue
+- If one index is less than the other, continue
+- If indexes are equal, continue
+- Once you reach the end of the array, repeat from the beginning until the least and greatest variables are at the beginning and end of the array
+
+
+SOLUTION :
 */
