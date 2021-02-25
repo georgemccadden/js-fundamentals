@@ -36,3 +36,12 @@ const bubbleSort = (array) => {
 		}
 	}
 };
+
+/*
+
+BIG O :
+
+Runtime complexity -> O(n^2) quadratic time
+Space complexity -> O(1) constant time
+
+*/
