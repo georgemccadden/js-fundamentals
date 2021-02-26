@@ -28,6 +28,19 @@ const insertionSort = (array) => {
 	for (let i = 0; i < length; i++) {
 		if (array[i] < array[0]) {
 			array.unshift(array.splice(i, 1)[0]);
+		} else {
+			for (let k = 1; k < i; k++) {
+				if (array[i] > array[k - 1] && array[i] < array[k]) {
+					array.splice(k, 0, array.splice(i, 1)[0]);
+				}
+			}
 		}
 	}
 };
+/*
+
+BIG O :
+Runtime complexity -> O(n^2) quadratic time / but is optimal at O(n) for nearly sorted data
+Space complexity -> O(1) constant time
+
+*/
