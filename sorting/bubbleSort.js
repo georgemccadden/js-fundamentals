@@ -1,13 +1,16 @@
 /*
 
 PROBLEM DOMAIN :
-Implement bubble sort
+Write an algorithm that performs bubble sort.
 
 
 EXAMPLE :
 array = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 
-return -> [0, 1, 2, 4, 5, 6, 44, 63, 87, 99, 283]
+first iteration -> 99 > 44, 6, 2, 1, 5, 63, 87, 4, and 0 so array = [44, 6, 2, 1, 5, 63, 87, 4, 283, 0, 99]
+second iteration -> 44 > 6, 2, 1, 5, 4, and 0 so array = [6, 2, 1, 5, 4, 63, 87, 0, 283, 44, 99]
+third iteration -> 6 > 2, 1, 5, 4, and 0 so array = [2, 1, 5, 4, 0, 63, 87, 6, 283, 44, 99]
+...
 
 
 ALGORITHM :
