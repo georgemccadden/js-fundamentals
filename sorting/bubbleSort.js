@@ -14,11 +14,11 @@ third iteration -> 6 > 2, 1, 5, 4, and 0 so array = [2, 1, 5, 4, 0, 63, 87, 6, 2
 
 
 ALGORITHM :
-- For every index, iterate through the entire array for comparison
+- For every index, iterate through the entire array for comparisons
 - If one index is greater than the other, swap and continue
-- If one index is less than the other, continue
-- If indexes are equal, continue
-- Once you reach the end of the array, repeat from the beginning until the least and greatest variables are at the beginning and end of the array
+- If one index is less than the other, continue without swapping
+- If indexes are equal, continue without swapping
+- return the mutated array
 
 
 SOLUTION :
