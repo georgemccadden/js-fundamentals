@@ -20,3 +20,12 @@ ALGORITHM :
 
 SOLUTION :
 */
+const insertionSort = (array) => {
+	let length = array.length;
+
+	for (let i = 0; i < length; i++) {
+		if (array[i] < array[0]) {
+			array.unshift(array.splice(i, 1)[0]);
+		}
+	}
+};
