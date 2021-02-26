@@ -14,8 +14,10 @@ third iteration -> 6 > 2, 1, and 5 but not 44 so array = [2, 1, 5, 6, 44, 63, 87
 
 ALGORITHM :
 - For each index of the array, iterate through the array
-- If the first variable isn't the lowest variable, find where it is lower than the variable to the right of it but greater than the variable to the left.
-- Stop iterating once the array is sorted
+- If the variable at that iteration's index is lower than the first variable in the array, shift the array and make it the first variable.
+- Else, find where in the array it is lower than the variable to the right of it but greater than the variable to the left.
+- Move to the next item in the iteration
+- Return the sorted array once you reach the end of the iteration
 
 
 SOLUTION :
