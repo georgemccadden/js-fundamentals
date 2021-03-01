@@ -45,4 +45,16 @@ const merge = (arr1, arr2) => {
 
 const mergeSort = (array) => {
 	if (array.length <= 1) return array; // recursion base case for divide and conquer
+	let halfpoint = Math.ceil(array.length / 2);
+	let firstHalf = mergeSort(arr.splice(0, halfpoint));
+	let secondHalf = mergeSort(arr.splice(-halfpoint));
+
+	return merge(firstHalf, secondHalf);
 };
+/*
+
+BIG O :
+Runtime complexity -> O(n log n)
+Space complexity -> O(n)
+
+*/
