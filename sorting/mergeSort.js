@@ -26,6 +26,25 @@ const mergeSort = (arr) => {
 	const middle = Math.floor(length / 2);
 	const left = arr.slice(0, middle);
 	const right = arr.slice(middle);
+
+	return merge(mergeSort(left), mergeSort(right));
+};
+
+const merge = (left, right) => {
+	const results = [];
+	let leftIndex = 0;
+	let rightIndex = 0;
+
+	while (leftIndex < left.length && rightIndex < right.length) {
+		if (left[leftIndex] < right[rightIndex]) {
+			results.push(left[leftIndex]);
+			leftIndex++;
+		} else {
+			results.push(right[rightIndex]);
+			rightIndex++;
+		}
+	}
+	return results.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 };
 /*
 
