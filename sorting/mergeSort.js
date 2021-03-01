@@ -19,37 +19,8 @@ array = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 SOLUTION :
 */
 
-const merge = (arr1, arr2) => {
-	let results = [];
-	let i = 0;
-	let k = 0;
-
-	while (i < arr1.length && k < arr2.length) {
-		if (arr1[i] > arr2[k]) {
-			results.push(arr2[k]);
-			k++;
-		} else {
-			results.push(arr1[i]);
-			i++;
-		}
-	}
-	while (i < arr1.length) {
-		result.push(arr1[i]);
-		i++;
-	}
-	while (k < arr2.length) {
-		result.push(arr2[k]);
-	}
-	return results;
-};
-
-const mergeSort = (array) => {
-	if (array.length <= 1) return array; // recursion base case for divide and conquer
-	let halfpoint = Math.ceil(array.length / 2);
-	let firstHalf = mergeSort(arr.splice(0, halfpoint));
-	let secondHalf = mergeSort(arr.splice(-halfpoint));
-
-	return merge(firstHalf, secondHalf);
+const mergeSort = (arr) => {
+	if (arr.length === 1) return arr;
 };
 /*
 
