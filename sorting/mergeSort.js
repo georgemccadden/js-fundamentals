@@ -18,29 +18,31 @@ array = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 
 SOLUTION :
 */
-const mergeSort = (array) => {
-	if (array.length === 1) return array;
-	function merge(left, right) {
-		let result = [];
-		let i = 0;
-		let k = 0;
 
-		while (i < left.length && k < right.length) {
-			if (left[i] > right[k]) {
-				result.push(right[k]);
-				k++;
-			} else {
-				result.push(left[i]);
-				i++;
-			}
-		}
-		while (i < left.length) {
-			result.push(left[i]);
+const merge = (arr1, arr2) => {
+	let results = [];
+	let i = 0;
+	let k = 0;
+
+	while (i < arr1.length && k < arr2.length) {
+		if (arr1[i] > arr2[k]) {
+			results.push(arr2[k]);
+			k++;
+		} else {
+			results.push(arr1[i]);
 			i++;
 		}
-		while (k < right.length) {
-			result.push(right[k]);
-			k++;
-		}
 	}
+	while (i < arr1.length) {
+		result.push(arr1[i]);
+		i++;
+	}
+	while (k < arr2.length) {
+		result.push(arr2[k]);
+	}
+	return results;
+};
+
+const mergeSort = (array) => {
+	if (array.length <= 1) return array; // recursion base case for divide and conquer
 };
