@@ -1,7 +1,7 @@
 /*
 
 PROBLEM DOMAIN :
-Write an algorithm that performs merge sort.
+Write an algorithm that performs merge sort. * This is really fast and should be used when space complexity isn't a problem *
 
 
 ALGORITHM :
