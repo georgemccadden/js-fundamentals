@@ -1,7 +1,7 @@
 /*
 
 PROBLEM DOMAIN :
-Write an algorithm that performs insertion sort.
+Write an algorithm that performs insertion sort. (Best used for small amounts of data or data that is mostly sorted)
 
 
 ALGORITHM :
