@@ -43,6 +43,24 @@ class BinarySearchTree {
 		const newNode = new Node(value);
 		if (this.root === null) {
 			this.root = newNode;
+		} else {
+			let curr = this.root;
+			while (true) {
+				if (value < curr.value) {
+					if (!curr.left) {
+						curr.left = newNode;
+						return this;
+					}
+					curr = curr.left;
+				}
+				if (value > curr.value) {
+					if (!curr.right) {
+						curr.right = newNode;
+						return this;
+					}
+					curr = curr.right;
+				}
+			}
 		}
 	}
 }
