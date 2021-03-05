@@ -27,3 +27,10 @@ Output -> [9, 4, 20, 1, 6, 15, 170]
 
 SOLUTION :
 */
+class Node {
+	constructor(value) {
+		this.value = value;
+		this.left = null;
+		this.right = null;
+	}
+}
