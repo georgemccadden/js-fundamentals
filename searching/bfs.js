@@ -15,4 +15,15 @@ ALGORITHM :
 - - Check to see if the current node has a left, if so, push it into the queue. If not, check to see if the current node has a right, if so, push it into the queue.
 - Return the list
 
+
+EXAMPLE :
+
+Input ->     9
+          4     20
+        1  6  15  170
+
+Output -> [9, 4, 20, 1, 6, 15, 170]
+
+
+SOLUTION :
 */
