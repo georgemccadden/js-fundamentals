@@ -63,4 +63,7 @@ class BinarySearchTree {
 			}
 		}
 	}
+	bfs() {
+		let curr = this.root;
+	}
 }
