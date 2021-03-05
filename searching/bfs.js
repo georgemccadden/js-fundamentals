@@ -82,3 +82,10 @@ class BinarySearchTree {
 		return list;
 	}
 }
+/*
+
+BIG O :
+Runtime complexity -> O(n)
+Space complexity -> O(n)
+
+*/
